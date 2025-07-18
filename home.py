@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-
+from pymongo import MongoClient
 import altair as alt
 import base64 # Import the base64 library
 
@@ -120,17 +120,9 @@ st.markdown(f"""
 # --- MongoDB Connection, Database Helpers, Analytics Functions, Main App layout ---
 
 # --- MongoDB Connection (Hardcoded) ---
-@st.cache_resource
-def init_connection():
-    try:
-        connection_string = 'mongodb+srv://soumyadeepdas2511:dxRsCQDq7YQSc1vh@cluster0.zmm4k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-        client = MongoClient(connection_string)
-        return client
-    except Exception as e:
-        st.error(f"Failed to connect to MongoDB: {e}")
-        return None
-
-client = init_connection()
+client = MongoClient(
+    'mongodb+srv://soumyadeepdas2511:dxRsCQDq7YQSc1vh@cluster0.zmm4k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+)
 
 # --- Database Helper Functions ---
 def get_or_create_log(date_str, tasks_for_day):
