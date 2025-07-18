@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import datetime
-from pymongo import MongoClient
+
 import altair as alt
 import base64 # Import the base64 library
 
