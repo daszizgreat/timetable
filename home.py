@@ -201,9 +201,9 @@ timetable_data = {
     'Monday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET', 'GYM'],
     'Tuesday': ['DAA', 'React Js', 'Aptitude', 'Projects', 'LEET', 'GYM'],
     'Wednesday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET', 'BREAK'],
-    'Thursday': ['DSA', '—', '—', 'DN/NPN', 'LEET', 'GYM'],
-    'Friday': ['DAA', '—', '—', 'DN/NPN', 'LEET', 'GYM'],
-    'Saturday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET', 'GYM'],
+    'Thursday': ['DSA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET', 'GYM'],
+    'Friday': ['DAA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET', 'GYM'],
+    'Saturday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET', 'BREAK'],
 }
 index_labels = [
     '📚 5 videos/day', '💻 Programming Language', '🧠 1 chapter/day',
