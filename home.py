@@ -198,12 +198,12 @@ st.title("🗓️  Weekly Timetable")
 
 # --- Timetable Data and Display ---
 timetable_data = {
-    'Monday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET', 'GYM'],
-    'Tuesday': ['DAA', 'React Js', 'Aptitude', 'Projects', 'LEET', 'GYM'],
-    'Wednesday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET', 'BREAK'],
-    'Thursday': ['DSA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET', 'GYM'],
-    'Friday': ['DAA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET', 'GYM'],
-    'Saturday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET', 'BREAK'],
+    'Monday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'GYM'],
+    'Tuesday': ['DAA', 'React Js', 'Aptitude', 'Projects', 'LEET(dbms)', 'GYM'],
+    'Wednesday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'BREAK'],
+    'Thursday': ['DSA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET(dbms)', 'GYM'],
+    'Friday': ['DAA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET(dsa)', 'GYM'],
+    'Saturday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dbms)', 'BREAK'],
 }
 index_labels = [
     '📚 5 videos/day', '💻 Programming Language', '🧠 1 chapter/day',
