@@ -153,6 +153,7 @@ def update_task_status(date_str, task_name, person):
         {"$set": {f"tasks.$.{person}_status": new_status}}
     )
     st.toast(f"Set '{task_name}' to '{new_status}' for {person.upper()}!", icon="👍")
+    st.balloons()
 
 # --- Analytics Functions ---
 @st.cache_data(ttl=600)
@@ -343,3 +344,4 @@ if client:
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.info("No tasks marked 'Done' to show progress chart.")
+
