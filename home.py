@@ -199,12 +199,12 @@ st.title("🗓️  Weekly Timetable")
 
 # --- Timetable Data and Display ---
 timetable_data = {
-    'Monday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'GYM'],
-    'Tuesday': ['DAA', 'React Js', 'Aptitude', 'Projects', 'LEET(dbms)', 'GYM'],
-    'Wednesday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'BREAK'],
-    'Thursday': ['DSA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET(dbms)', 'GYM'],
-    'Friday': ['DAA', 'BREAK', 'BREAK', 'DN/NPN', 'LEET(dsa)', 'GYM'],
-    'Saturday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dbms)', 'BREAK'],
+    'Monday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)'],
+    'Tuesday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'BREAK'],
+    'Wednesday': ['DSA', 'COLLEGE', 'Aptitude', 'C++', 'LEET(dbms)'],
+    'Thursday': ['DSA', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)'],
+    'Friday': ['DBMS', 'React Js', 'Aptitude', 'Projects', 'LEET(dsa)', 'BREAK'],
+    'Saturday': ['DSA', 'COLLEGE', 'Aptitude', 'C++', 'LEET(dbms)'],
 }
 index_labels = [
     '📚 5 videos/day', '💻 Programming Language', '🧠 1 chapter/day',
@@ -344,4 +344,5 @@ if client:
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.info("No tasks marked 'Done' to show progress chart.")
+
 
