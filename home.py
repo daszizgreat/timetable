@@ -200,11 +200,11 @@ st.title("🗓️  Weekly Timetable")
 # --- Timetable Data and Display ---
 timetable_data = {
     'Monday': ['DSA', 'LEET', 'VARC', 'Projects', 'College', 'BREAK'],
-    'Tuesday': ['DAA', 'LEET', 'QUANT', 'RESEARCH', 'College', 'BREAK'],
+    'Tuesday': ['DAA', 'LEET', 'APTITUDE', 'RESEARCH', 'BREAK', 'BREAK'],
     'Wednesday': ['DBMS', 'LEET(DBMS)', 'DI', 'RESEARCH', 'College', 'BREAK'],
-    'Thursday': ['DSA', 'LEET', 'LR', 'Projects', 'College', 'BREAK'],
-    'Friday': ['DBMS', 'LEET', 'QUANT', 'RESEARCH', 'College', 'BREAK'],
-    'Saturday': ['DAA', 'LEET(DBMS)', 'PROJECT', 'BREAK', 'College', 'BREAK'],
+    'Thursday': ['DSA', 'LEET', 'LR', 'Projects', 'BREAK', 'BREAK'],
+    'Friday': ['DBMS', 'LEET', 'APTITUDE', 'RESEARCH', 'College', 'BREAK'],
+    'Saturday': ['DAA', 'LEET(DBMS)', 'PROJECT', 'BREAK', 'BREAK', 'BREAK'],
 }
 index_labels = [
     '📚 5 videos/day', '💻 Programming Language', '🧠 1 chapter/day',
@@ -344,6 +344,7 @@ if client:
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.info("No tasks marked 'Done' to show progress chart.")
+
 
 
 
