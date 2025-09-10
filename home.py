@@ -207,8 +207,8 @@ timetable_data = {
     'Saturday': ['DAA', 'LEET(DBMS)', 'PROJECT', 'BREAK', 'BREAK', 'BREAK'],
 }
 index_labels = [
-    '📚 5 videos/day', '💻 Programming Language', '🧠 1 chapter/day',
-    '🚀 Internship / Projects', '☕ JAVA/DBMS', '💪 IMP'
+    'LEARN/REVISE', 'STREAKS', 'CAT',
+    'IMP', 'TRY TOO', '💪 IMP'
 ]
 df = pd.DataFrame(timetable_data, index=index_labels)
 def style_special_cells(val):
@@ -344,6 +344,7 @@ if client:
                 st.altair_chart(chart, use_container_width=True)
             else:
                 st.info("No tasks marked 'Done' to show progress chart.")
+
 
 
 
